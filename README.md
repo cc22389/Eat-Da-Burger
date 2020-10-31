@@ -2,11 +2,25 @@
 ![GitHub license](https://img.shields.io/badge/license-Unlicense-blue.svg)
 
 ## Description
-A restaurant app that lets users input the names of burgers they'd like to eat. 
+A restaurant app that lets users input the names of burgers they'd like to eat and DEVOUR them if they choose to do so.
+
+ ## Table of Contents 
+  
+  * [Links](#links) 
+  
+  * [Installation](#installation)
+  
+  * [License](#license)
+
+  * [Usage](#usage)
+  
+  * [Tests](#tests)
+  
+  * [Questions](#questions)
 
 ## Links
-* **Repository** - https://github.com/cc22389/Eat-Da-Burger.git
-* **Video demonstration** - 
+* **Github Repository** - https://github.com/cc22389/Eat-Da-Burger.git
+* **Heroku deployed application** - https://eat-da-bu.herokuapp.com/
 
 ## Installation
 
@@ -19,6 +33,21 @@ npm i
 ## License
 
 This project is licensed under the Unlicense license.
+
+## Usage
+
+* Express
+* Express-handlebars
+* MySQL
+
+
+## Tests
+
+To run tests, run the following command:
+
+```
+npm run test
+```
 
 ## Questions
 
