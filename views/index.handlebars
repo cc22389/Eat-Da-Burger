@@ -1,0 +1,51 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center" id="top-bar">
+            <img src="/assets/img/backyardBurger.png" alt="Backyard Burger">
+            <h1>Eat-Da-Yummy-Burger!</h1>
+        </div>
+    </div>
+    <div class= "row">
+        <div class="col-md-6 text-center">
+            <div class="row">
+                <h5>Burgers I want to eat...</h5>
+            </div>
+            <div class="row">
+                {{!-- want to eat col --}}
+                <ul>
+                    {{#each burgers}}
+                    {{#unless devoured}}
+                        {{> burgers/burger-block devoured=true}}
+                    {{/unless}}
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="row">
+                <h5>Burgers I have eaten... YUM!</h5>
+            </div>
+            <div class="row">
+                {{!-- devoured col --}}
+                <ul>
+                    {{#each burgers}}
+                    {{#if devoured}}
+                        {{> burgers/burger-block devoured=false}}
+                    {{/if}}
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center enter_section" align="center">
+            <form id="burger-form" action="/burgers/create" method="POST" >
+                <input type="text" class="form-control" name="burger_name" value id="enter_text">
+                <button class="subBtn btn-primary" type="submit" id="text-enter-button">Submit</button>
+            </form>
+            <p>What burger do you want to eat?! Click the "Submit" button.</p>
+        </div>
+    </div>
+</div>

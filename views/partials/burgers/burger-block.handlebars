@@ -1,0 +1,12 @@
+<li>
+    <div class="row">
+        <div class="col text-center">{{burger_name}}</div>
+        {{#if devoured}}
+        <div class="col text-center">
+            <button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
+                DEVOUR!
+            </button>
+        </div>
+        {{/if}}
+    </div>
+</li>
